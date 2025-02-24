@@ -1,0 +1,131 @@
+.product-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 20px;
+    padding: 20px;
+  }
+  
+  .product-card {
+    width: 300px;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+    background-color: #fff;
+    text-align: center;
+  }
+  
+  .product-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+  }
+  
+  .product-image {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    object-fit: cover;
+    margin-bottom: 15px;
+  }
+  
+  .product-name {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #333;
+  }
+  
+  .product-price {
+    font-size: 1rem;
+    color: #e74c3c;
+    margin-bottom: 15px;
+  }
+  
+  .quantity-controls {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 15px;
+  }
+  
+  .quantity-button {
+    background-color: #3498db;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    padding: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .quantity-button:hover {
+    background-color: #2980b9;
+  }
+  
+  .quantity-display {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #333;
+  }
+  
+  .add-to-cart-button {
+    background-color: #2ecc71;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    padding: 12px 20px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    width: 100%;
+  }
+  
+  .add-to-cart-button:hover {
+    background-color: #27ae60;
+  }
+  .product-name {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #333;
+    text-overflow: ellipsis;  /* Thêm dấu ba chấm nếu tên sản phẩm quá dài */
+    overflow: hidden;  /* Ẩn phần thừa của tên */
+    white-space: nowrap;  /* Không cho tên sản phẩm xuống dòng */
+    width: 100%;  /* Chiếm toàn bộ chiều rộng */
+    display: block;  /* Đảm bảo thẻ <h3> chiếm đủ chiều rộng */
+  }
+  
+  .product-card {
+    width: 300px;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+    background-color: #fff;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    height: 450px;  /* Đặt chiều cao cố định cho card */
+  }
+  
+  .product-price {
+    font-size: 1rem;
+    color: #e74c3c;
+    margin-bottom: 15px;
+    display: block;
+    overflow: hidden;
+    text-overflow: ellipsis;  /* Cũng có thể áp dụng cho giá nếu cần */
+  }
+  
+  .product-image {
+    width: 100%;
+    height: 200px;  /* Đặt chiều cao cho hình ảnh để các hình ảnh đều nhau */
+    border-radius: 8px;
+    object-fit: cover;
+    margin-bottom: 15px;
+  }
+  
